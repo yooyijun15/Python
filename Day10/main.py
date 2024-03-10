@@ -1,6 +1,6 @@
-from art import logo
+from art import LOGO
 
-print(logo)
+print(LOGO)
 
 def add(n1, n2):
   return n1 + n2

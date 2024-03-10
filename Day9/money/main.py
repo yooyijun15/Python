@@ -1,7 +1,7 @@
 from replit import clear
-from art import logo
+from art import LOGO
 
-print(logo)
+print(LOGO)
 print("Welcome to the secret auction program.")
 
 bidders = []
