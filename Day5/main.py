@@ -32,8 +32,10 @@ for char in range(1, count_symbols + 1):
 for char in range(1, count_numbers + 1):
     password_list += random.choice(numbers)
 
+# 리스트 섞기
 random.shuffle(password_list)
 
+# 리스트 -> 문자열 변경
 for char in password_list:
     password_char += char
 
