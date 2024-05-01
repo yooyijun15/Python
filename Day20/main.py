@@ -10,7 +10,7 @@ game_screen.setup(600, 600)
 game_screen.bgcolor("black")
 game_screen.title("Snake Game")
 # tracer : 출력 제어
-# 옵션 - 0 : 동시 / 1 : 각각
+# 옵션 - 0 : OFF, 수동 업데이트 필수 / 1 : ON
 game_screen.tracer(0)
 
 # 객체 생성
