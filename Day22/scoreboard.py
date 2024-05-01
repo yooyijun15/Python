@@ -4,7 +4,7 @@ ALIGNMENT = "center"
 FONT = ("Courier", 24, "normal")
 
 
-class Score(Turtle):
+class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.color("white")
@@ -17,7 +17,6 @@ class Score(Turtle):
 
     def update(self):
         self.write(f"{self.L_score} : {self.R_score}", align=ALIGNMENT, font=FONT)
-
 
     def R_get_score(self):
         self.R_score += 1

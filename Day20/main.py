@@ -30,7 +30,9 @@ game_screen.onkey(snake.right, "Right")
 game_is_on = True
 while game_is_on:
     # segments의 객체(Snake) 하나로 보이기 위한 것
+    # 변경된 화면 동시 업데이트
     game_screen.update()
+    # while 루프 반복 시간 조절
     time.sleep(0.1)
     snake.move()
     # 점수 획득
