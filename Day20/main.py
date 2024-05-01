@@ -42,8 +42,9 @@ while game_is_on:
         snake.extend()
         food.reflush()
         score.get_score()
+
     # 벽 충돌
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if snake.head.xcor() > 295 or snake.head.xcor() < -295 or snake.head.ycor() > 295 or snake.head.ycor() < -295:
         game_is_on = False
         score.game_over()
     # 객체(Snake) 머리와 몸통 충돌
@@ -52,6 +53,7 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             game_is_on = False
             score.game_over()
+
 
 
 game_screen.exitonclick()
