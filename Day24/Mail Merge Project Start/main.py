@@ -18,6 +18,8 @@ NAMES = './Input/Names/invited_names.txt'
 OUTPUT_FOLDER = './Output/ReadyToSend'
 
 # 공백 및 개행 문자 제거
+# strip()
+# rstrip()
 with open(NAMES) as name_file:
     names = [line.rstrip() for line in name_file]
 
