@@ -26,7 +26,7 @@ while game_is_on:
     answer_state = screen.textinput(title=f"({current_count}/{total_count}) Guess the State", prompt="What's another state's name?")
     if answer_state is None:
         game_is_on = False
-    if answer_state == "Exit":
+    if answer_state == "exit":
         # 입력한 값을 리스트에 별도 저장하여, 입력하지 않은 값 .csv 파일 추출 가능
         game_is_on = False
     else:
@@ -43,6 +43,7 @@ while game_is_on:
         # if len(answer) > 0:
         #     print("Exist")
         # 1-3
+        # data 데이터프레임의 모든 값 중에서 answer_state 값이 있는지 확인
         if answer_state in data.values:
             # 행 추출 > 열 추출
             # 해당 행 추출
@@ -51,11 +52,12 @@ while game_is_on:
             goto_x = int(state_data["x"])
             # 해당 행의 y 열 추출
             goto_y = int(state_data["y"])
-            state = state_data.state
+            state = state_data["state"]
+            write_state = state.values[0]
             # 객체 생성
             new_state = State()
             # new_state.create(int(state_data.x), int(state_data.y), state_data.state)
-            new_state.create(goto_x, goto_y, state)
+            new_state.create(goto_x, goto_y, write_state)
             current_count += 1
             screen.update()
 

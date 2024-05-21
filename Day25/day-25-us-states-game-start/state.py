@@ -9,4 +9,4 @@ class State(Turtle):
         self.penup()
         self.hideturtle()
         self.goto(goto_x, goto_y)
-        self.write()
+        self.write(state)
