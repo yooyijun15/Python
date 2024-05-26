@@ -46,3 +46,30 @@
 # # new_dict = {new_key:new_value for (key,value) in dict.items() if test}
 # passed_students = {student:score for (student, score) in students_score.items() if score >= 60}
 # print(passed_students)
+
+# 6. 활용
+import pandas
+
+student_dict = {
+    "student": ["kim", "lee", "park"],
+    "score": [100, 85, 40]
+}
+# # .items(): 딕셔너리 key, value 얻기
+# for (key, value) in student_dict.items():
+#     print(key)
+#     print(value)
+#     print(key, value)
+
+student_df = pandas.DataFrame(student_dict)
+# print(student_df)
+
+# for (key, value) in student_df.items():
+#     print(key)
+#     print(value)
+#     print(key, value)
+
+for (index, row) in student_df.iterrows():
+    print(index)
+    print(row)
+    print(row.student)
+    print(row.score)

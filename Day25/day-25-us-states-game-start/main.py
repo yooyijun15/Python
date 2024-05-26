@@ -53,6 +53,7 @@ while game_is_on:
             # 해당 행의 y 열 추출
             goto_y = int(state_data["y"])
             state = state_data["state"]
+            # values[0] : 첫번째 열 값
             write_state = state.values[0]
             # 객체 생성
             new_state = State()
