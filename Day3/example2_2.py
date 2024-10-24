@@ -1,4 +1,4 @@
-# if - elif - else
+# if - else
 # 피자 주문
 
 print("Thank you for choosing Python Pizza Deliveries!")
