@@ -12,6 +12,8 @@ extra_cheese = input("Do you want extra cheese? Y or N? ")
 bill = 0
 
 # 옵션 별 가격
+# (A) 페퍼로니 추가 시, 사이즈 별 가격 상이
+# (B) 치즈 추가 시, 사이즈 별 가격 동일
 if size == 'S':
   bill += 15
   if add_pepperoni == 'Y':
