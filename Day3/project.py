@@ -9,7 +9,7 @@ name2 = input("What is their name? ")
 # 이름 합친 후, 소문자로 변경
 combine_names = name1 + name2
 lower_names = combine_names.lower()
-# 내장함수 lower()
+# 내장함수 .lower()
 
 # 해당 문자 포함 갯수만큼 카운트
 t = lower_names.count('t')
@@ -21,7 +21,7 @@ l = lower_names.count('l')
 o = lower_names.count('o')
 v = lower_names.count('v')
 e = lower_names.count('e')
-# 내장함수 count()
+# 내장함수 .count()
 
 # 궁합 점수
 true_total = str(t + r + u + e)
