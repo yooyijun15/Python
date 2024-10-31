@@ -1,6 +1,6 @@
 # 가위바위보
 
-# random 모듈 불러오기
+# random 모듈
 import random
 
 # 주먹, 보자기, 가위 특수문자
@@ -35,7 +35,7 @@ list = [rock, paper, scissors]
 # 0 - 주먹, 1 - 보자기, 2 - 가위
 user_choice = int(input("What do you choose? Tpye 0 for Rock, 1 for Paper, or 2 for Scissors. 2 : "))
 computer_choice = random.randint(0, 2)
-# random 함수 .randint
+# random 함수 .randint()
 
 # 리스트의 인덱스 활용하여 특수문자 출력
 print(f"< Your choice > {list[user_choice]}\n")
