@@ -20,6 +20,7 @@ for i in list:
 
 avg = round(total_height / count, 2)
 
+# 출력
 print(f"total height = {total_height}")
 print(f"number of students = {count}")
 print(f"average height = {avg}")
