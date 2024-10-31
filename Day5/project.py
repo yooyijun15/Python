@@ -36,6 +36,7 @@ for k in range(0, number_cnt):
 
 random.shuffle(password_list)
 # random 함수 .shuffle()
+# 문자열은 섞을 수 없으므로, 리스트 타입으로 섞은 후 문자열로 변경
 
 # 리스트 -> 문자열 변환
 for element in password_list:
