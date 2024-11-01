@@ -5,6 +5,8 @@
 # 사용자 함수 정의 - prime_checker
 # 매개변수 - num
 
+# (특이사황) check_true 변수 사용
+
 # 방법 (2) - 2부터 N-1까지 전부 나누고, 최종 check_true 값으로 판별
 def prime_checker(num):
     check_true = True
